@@ -1,6 +1,23 @@
+:root {
+    --thm-f6: #AD5C2B;
+    --thm-white: #fff;
+    --thm-color: #492C5C;
+    --thm-base: #E87A09;
+    --thm-line: #007BFF;
+    --thm-font: 'Arial', sans-serif;
+}
+
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     height: 200vh;
+}
+
+
+
+@media screen and (max-width: 576px) {
+    body{
+        font-size: 12px;
+    }
 }

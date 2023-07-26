@@ -1,13 +1,15 @@
+/* Navbar */
 .container{
     padding: 1em 10em;
 }
 .navbar {
-background: linear-gradient(to right, #AD5C2B, #492C5C);
+background:  linear-gradient(80deg, var(--thm-f6), var(--thm-color));
 color: #fff;
 display: flex;
 align-items: center;
 position: sticky;
 top: 0;
+z-index: 10;
 }
 
 .logo {
@@ -30,20 +32,163 @@ transition: .5s;
     color: #AD5C2B;
 }
 
-/* Responsive styles for screens up to 768px */
-@media screen and (max-width: 768px) {
-.navbar {
+
+/* Home Section */
+#home {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
     flex-direction: column;
-}
-
-.sections {
-    flex: 1;
-    margin-top: 1em;
     justify-content: center;
-}
+    align-items: center;
 
-.sections a {
+  }
+  
+  #home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,5,34);
+    background: linear-gradient(45deg,var(--thm-f6),var(--thm-color));
+    border-radius: 0 0 60% 60% / 0 0 100% 100%;
+    transform: scaleX(1.5);
+    z-index: -1;
+  }
+
+  .home-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .image-container {
+    flex:1;
+    padding-right: 1em;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 5px solid #ccc;
+    padding: .5em;
+  }
+
+  
+  .text-container {
+    flex: 1;
+    padding-left: 1.5em;
+  }
+  .text-container h1{
+   background: linear-gradient(80deg, var(--thm-f6), var(--thm-color));
+   width: 25%;
+   text-align: center;
+   color: #fff;
+  }
+  .text-container h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--thm-white);
+  }
+  
+  .text-container p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: 7; /* Choose your desired text color */
+  }
+  
+  .social-icons a {
     display: block;
-    padding: 1em;
-}
-}
+    margin-top: 1em;
+  }
+  
+  .social-icon {
+    flex: 1;
+    justify-content: space-between;
+    font-size: 2.2rem;
+    color: var(--thm-white); /* Choose your desired icon color */
+    margin-right: 1em;
+  }
+
+
+/* Responsive styles for phones */
+@media screen and (max-width: 576px) {
+    .navbar {
+      flex-direction: column;
+    }
+    
+    .sections {
+      flex: 1;
+      margin-top: 1em;
+      justify-content: center;
+    }
+    
+    .sections a {
+      display: block;
+    }
+    #home .class{
+        height: 50vh;
+    }
+    .home-content {
+        flex-direction: column;
+      }
+    
+    .image-c.text-container h2 ontainer, .text-container {
+        padding: 0;
+      }
+      .text-container h2, h1, p {
+        text-align: center;
+        font-size: 1.5rem;
+      }
+      .text-container h1{
+        width: 100%;
+      }
+      
+    .social-icons{
+        margin: 0;
+        text-align: center;
+    }
+    
+    .social-icons a{
+        display: initial;
+        margin-top: 1em;
+        font-size: 1.5rem;
+
+      }
+  }
+  
+  /* Responsive styles for tablets */
+  @media screen and (min-width: 577px) and (max-width: 992px) {
+    .navbar {
+      flex-direction: row;
+    }
+    
+    .sections {
+      justify-content: flex-end;
+    }
+    .text-container h1{
+        width: 50%;
+    }
+    .social-icons{
+        margin-left: 1em;
+        text-align: center;
+    }
+    
+  }
+  
+  /* Responsive styles for desktops */
+  @media screen and (min-width: 993px) {
+    .navbar {
+      flex-direction: row;
+    }
+    
+    .sections {
+      justify-content: flex-end;
+    }
+
+  }
