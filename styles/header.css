@@ -141,7 +141,7 @@ transition: .5s;
     .image-c.text-container h2 ontainer, .text-container {
         padding: 0;
       }
-      .text-container h2, h1, p {
+      .text-container h2, .text-container h1, .text-container p {
         text-align: center;
         font-size: 1.5rem;
       }

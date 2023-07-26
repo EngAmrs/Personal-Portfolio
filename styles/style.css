@@ -4,19 +4,27 @@
     --thm-color: #492C5C;
     --thm-base: #E87A09;
     --thm-line: #007BFF;
-    --thm-font: 'Arial', sans-serif;
+    --thm-font: 'Poppins', sans-serif;
+    --thm-black: #2b1d6a;
 }
 
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 200vh;
 }
 
 
+.progress-bar{
+    background-color: var(--thm-base);
+    border-radius: 5px;
+    padding: .2em;
+    text-align: center;
+    color: #fff; font-size: .8rem;
+    margin-bottom: 1em;
+}
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
     body{
         font-size: 12px;
     }
