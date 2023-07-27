@@ -7,7 +7,9 @@
     --thm-font: 'Poppins', sans-serif;
     --thm-black: #2b1d6a;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
