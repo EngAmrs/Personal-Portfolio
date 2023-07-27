@@ -1,3 +1,11 @@
+/* Components Styles */
+@import url('./header.css');
+@import url('./aboutme.css');
+@import url('./skills.css');
+@import url('./projects.css');
+@import url('./contact.css');
+@import url('./footer.css');
+
 :root {
     --thm-f6: #AD5C2B;
     --thm-white: #fff;
@@ -17,11 +25,14 @@ body{
     box-sizing: border-box;
 }
 
-.maincontainer {
+/* Main Container */
+.container {
     max-width: 1140px; /* Adjust this value as needed */
     margin: 0 auto; /* Center the container horizontally */
     padding: 1em 1.5em /* Optional: Add some padding inside the container */
   }
+
+
 .progress-bar{
     background-color: var(--thm-base);
     border-radius: 5px;

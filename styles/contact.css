@@ -7,7 +7,7 @@
     padding: 1em 10em;
     
   }
-  #contact .maincontainer{
+  #contact .container{
     display: flex;
     flex-wrap: wrap;
   }
@@ -128,7 +128,7 @@
     }
   }
   
-  @media screen and (max-width: 530px) {
+  @media screen and (max-width:  576px) {
     #contact .name-email {
       flex-direction: column;
     }
