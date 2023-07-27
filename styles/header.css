@@ -1,14 +1,14 @@
 /* Navbar */
 
 .navbar {
-background:  linear-gradient(80deg, var(--thm-f6), var(--thm-color));
+background: linear-gradient(45deg,var(--thm-f6),var(--thm-color));
 color: #fff;
 display: flex;
 align-items: center;
 position: sticky;
 top: 0;
 z-index: 10;
-padding: 1em 10em;
+padding: 0 10em;
 }
 
 .logo {
@@ -52,19 +52,18 @@ transition: .5s;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(0,5,34);
     background: linear-gradient(45deg,var(--thm-f6),var(--thm-color));
     border-radius: 0 0 60% 60% / 0 0 100% 100%;
     transform: scaleX(1.5);
     z-index: -1;
   }
 
-  .home-content {
+  #home .home-content {
     display: flex;
     align-items: center;
   }
   
-  .image-container {
+  #home .image-container {
     flex:1;
     padding-right: 1em;
   }
@@ -101,12 +100,12 @@ transition: .5s;
     color: 7; /* Choose your desired text color */
   }
   
-  .social-icons a {
+  #home .social-icons a {
     display: block;
     margin-top: 1em;
   }
   
-  .social-icon {
+  #home .social-icon {
     flex: 1;
     justify-content: space-between;
     font-size: 2.2rem;
@@ -115,7 +114,6 @@ transition: .5s;
   }
 
   
-
 /* Responsive styles for phones */
 @media screen and (max-width: 576px) {
     .navbar {
@@ -149,12 +147,12 @@ transition: .5s;
         width: 100%;
       }
       
-    .social-icons{
+      #home  .social-icons{
         margin: 0;
         text-align: center;
     }
     
-    .social-icons a{
+    #home .social-icons a{
         display: initial;
         margin-top: 1em;
         font-size: 1.5rem;
@@ -174,7 +172,7 @@ transition: .5s;
     .text-container h1{
         width: 50%;
     }
-    .social-icons{
+    #home .social-icons{
         margin-left: 1em;
         text-align: center;
     }

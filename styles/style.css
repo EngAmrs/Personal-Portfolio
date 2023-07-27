@@ -27,9 +27,9 @@ body{
 
 /* Main Container */
 .container {
-    max-width: 1140px; /* Adjust this value as needed */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 1em 1.5em /* Optional: Add some padding inside the container */
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 1em 1.5em 
   }
 
 
