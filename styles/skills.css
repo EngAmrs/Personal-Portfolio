@@ -1,6 +1,7 @@
 #skills{
     margin: 5em 0;
     font-family: var(--thm-font);
+    background-color: var(--thm-black)
 
 }
 #skills .flex-container {
@@ -10,11 +11,6 @@
     align-items: center;
     height: 100%;
 
-}
-
-#skills .skills-container {
-    padding: 1em 10em;
-    background-color: var(--thm-black)
 }
 
 #skills .header{
@@ -30,7 +26,7 @@
 #skills .header p {
     color: #ccc;
 }
-#skills .skills-container h2{
+#skills  h2{
     font-family: var(--thm-font);
     color: var(--thm-white);
     font-weight: 700;
@@ -51,6 +47,6 @@
 /* Responsive styles for phones */
 @media screen and (max-width: 576px) {
     .langs {
-        width: 100%; /* On small screens, make each .langs div occupy the full container width */
+        width: 100%;
     }    
   }

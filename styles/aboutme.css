@@ -1,6 +1,7 @@
 #about{
     margin: 5em 0;
     font-family: var(--thm-font);
+    width: 100%;
 
 }
 #about .flex-container {
@@ -15,18 +16,15 @@
     padding: 1em 10em;
 }
 
-#about .header{
-    text-align: center;
-}
 
 #about .header h1 {
     font-size: 2em;
     font-weight: bold;
-    margin-bottom: 1em;
     color: var(--thm-base);
 }
 #about .header p {
     color: #555;
+    line-height: 1.3em;
 }
 
 
@@ -46,9 +44,9 @@
     color: var(--thm-black);
     font-weight: bold;
 }
-#about .info-container h2{
+#about .info-container h3{
     font-family: var(--thm-font);
-    color: var(--thm-black);
+    color: #000;
     font-weight: 700;
 }
 
@@ -65,7 +63,7 @@
     #about .flex-container {
         flex-direction: column;
     }
-    #about .about-container {
+    #about .maincontainer {
         padding: 1em;
         text-align: center;
     }

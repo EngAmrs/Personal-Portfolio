@@ -1,7 +1,5 @@
 /* Navbar */
-.container{
-    padding: 1em 10em;
-}
+
 .navbar {
 background:  linear-gradient(80deg, var(--thm-f6), var(--thm-color));
 color: #fff;
@@ -10,6 +8,7 @@ align-items: center;
 position: sticky;
 top: 0;
 z-index: 10;
+padding: 1em 10em;
 }
 
 .logo {

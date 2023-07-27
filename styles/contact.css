@@ -1,0 +1,120 @@
+#contact {
+    padding: 2em;
+    background-color: var(--thm-black);
+    color: #fff;
+  }
+  #contact .contact-container{
+    padding: 1em 10em;
+    
+  }
+  #contact .flex-container{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+#contact .header{
+    flex: 1
+}
+#contact .header h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--thm-white);
+}
+#contact .header p {
+    color: #ccc;
+    line-height: 1.3em;
+    width: 80%;
+}
+
+.contact-data{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #contact .contact-info{
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  #contact .contact-item, #contact .social-icon {
+    display: flex;
+    margin-right: 1em;
+    font-size: 1rem;
+  }
+
+  #contact .contact-info i{
+    font-size: 1rem;
+    margin-right: .5em;
+    justify-content:start;
+  }
+
+  #contact .social-media-icons{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+  #contact .social-media-icons a{
+    flex: 20%;
+    font-size: 1.7rem;
+
+  }
+  #contact .social-media-icons .download-cv{
+    flex: 50%;
+  }
+  #contact .social-media-icons .download-cv button{
+    font-size: 1.1rem;
+    color: white;
+    background: transparent;
+    padding: .5em 1.3em;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+#contact .name-email {
+    display: flex;
+    flex-direction: row;
+
+  }
+  #contact  .name-email div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  #contact label {
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+  #contact input, #contact textarea {
+    border-radius: 3px;
+    border: none;
+    padding: 1em;
+    margin-right: 1em;
+  }
+  #contact input[type="submit"] {
+    width: 20vh;
+    margin-top: 1.5em;
+  }
+  #contact .cta {
+    font-size: 1.1em;
+    color: white;
+    background: var(--thm-base);
+    padding: 1.1em 2em;
+    border-radius: 5px;
+  }
+  #contact .cta:hover {
+    text-decoration: none;
+    background-color: var(--thm-white);
+    color: #000;
+  }
+  @media screen and (max-width: 750px) {
+    #contact form {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 530px) {
+    #contact .name-email {
+      flex-direction: column;
+    }
+  }

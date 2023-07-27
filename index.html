@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/aboutme.css">
     <link rel="stylesheet" href="./styles/skills.css">
+    <link rel="stylesheet" href="./styles/projects.css">
+    <link rel="stylesheet" href="./styles/contact.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-  <header> 
-    <nav class="navbar container">
+    
+    <nav class="navbar">
         <h1 class="logo">Amr Salah</h1>
         <div class="sections">
             <a href="#">Home</a>
@@ -22,41 +24,42 @@
             <a href="#">Contact</a>
         </div>
     </nav>
-    <section id="home">
-        <div class="container">
-            <div class="home-content">
-              <div class="image-container">
-                <img src="./assets//images//me.jpeg" alt="Amr Salah" width="350">
+
+    <!-- Start main content -->
+    <main>  
+        <section id="home">
+            <div class="maincontainer">
+                <div class="home-content">
+                  <div class="image-container">
+                    <img src="./assets//images//me.jpeg" alt="Amr Salah" width="350">
+                  </div>
+                  <div class="text-container">
+                    <h1>This is</h1>
+                    <h2>Amr Salah</h2>
+                    <p>Software Engineer</p>
+                  </div>
+                  <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                  </div>
+                </div>
               </div>
-              <div class="text-container">
-                <h1>This is</h1>
-                <h2>Amr Salah</h2>
-                <p>Software Engineer</p>
-              </div>
-              <div class="social-icons">
-                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-    </section>
-  </header>
-    <main>
+        </section>
         <section id="about">
-            <div class="about-container">
-                <article class="header">
-                    <h1>About Me</h1>
-                    <p>Aspiring Software Engineer with expertise in software engineering and solving complex problems.<br/>
-                        Collaborates effectively with team members and project leaders to deliver high-quality solutions within timelines. Continuously evaluates and optimizes code for optimal performance, maintainability, and scalability.
-                    </p>    
-                </article>
+            <div class="maincontainer">
                 <div class="flex-container">
                     <div class="image">
-                        <img src="./assets/images/about.jpeg" width="90%" alt="">
+                        <img src="./assets/images/about.jpeg" width="75%" alt="">
                     </div>
                     <div class="info-container">
-                        <h2>Personal Info</h2>
+                        <article class="header">
+                            <h1>About Me</h1>
+                            <p>Aspiring Software Engineer with expertise in software engineering and solving complex problems.
+                                Collaborates effectively with team members and project leaders to deliver high-quality solutions within timelines. Continuously evaluates and optimizes code for optimal performance, maintainability, and scalability.
+                            </p>    
+                        </article>
+                        <h3>Personal Info</h3>
                         <div class="personal">
                             <p><span>Full Name: </span>Amr salah Fathi</p>
                             <p><span>Date Of Birth: </span>14/8/1997</p>
@@ -70,7 +73,7 @@
             </div>
         </section>
         <section id="skills">
-            <div class="skills-container">
+            <div class="maincontainer">
                 <article class="header">
                     <h1>My Skills</h1>
                     <p> possess a diverse range of skills that enable me to excel in Software Engineering. My commitment to continuous learning and staying up-to-date with industry trends has allowed me to develop a robust set of abilities that can add value to any team or project.
@@ -138,9 +141,125 @@
                 </div>
             </div>
         </section>
-    </main>
-    <footer>
+        <section id="portfolio">
+            <div class="maincontainer">
+                <article class="header">
+                    <h1>Portfolio</h1>
+                    <p>Aspiring Software Engineer with expertise in software engineering and solving complex problems.<br/>
+                        Collaborates effectively with team members and project leaders to deliver high-quality solutions within timelines. Continuously evaluates and optimizes code for optimal performance, maintainability, and scalability.
+                    </p>    
+                </article>
+                <div class="flex-container">
+                    <div class="item" id="1">
+                        <img src="https://images.unsplash.com/photo-1508124780861-b1687f9a13e5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f841d43a63c085e930aa5b6b33e89a9f&auto=format&fit=crop&w=1385&q=80" alt="">
+                        <div class="text">
+                        <h3>PROJECT 1</h4>
+                        <p>Short Description</p>
+                        </div>
+                        <div class="button">Learn More</div>
+                    </div>
+                
+                    <div class="item" id="2">
+                        <img src="https://images.unsplash.com/photo-1496492352121-593138d42a61?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3542849cc0459345e3aa82a90ae51a01&auto=format&fit=crop&w=1350&q=80" alt="">
+                        <div class="text">
+                        <h3>PROJECT 2</h4>
+                        <p>Short Description</p>
+                        </div>
+                        <div class="button">Learn More</div>
+                    </div>
+                
+                    <div class="item" id="3">
+                        <img src="https://images.unsplash.com/photo-1515215676803-119c88d493cf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=baf00747bfb9fe41ad9af8cf00dbebbf&auto=format&fit=crop&w=1350&q=80" alt="">
+                        <div class="text">
+                            <h3>PROJECT 3</h4>
+                        <p>Short Description</p>
+                        </div>
+                        <div class="button">Learn More</div>
+                    </div>
+                
+                    <div class="item" id="4">
+                        <img src="https://images.unsplash.com/photo-1496939217462-7d42e9a74f0e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5e3be993a88feed38e4f5374ff3ba115&auto=format&fit=crop&w=1350&q=80g" alt="">
+                        <div class="text">
+                        <h3>PROJECT 4</h4>
+                        <p>Short Description</p>
+                        </div>
+                        <div class="button">Learn More</div>
+                    </div>
+                
+                    <div class="item" id="5">
+                        <img src="https://images.unsplash.com/photo-1504875427817-937a8a12e167?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cd7f399ba43093ead08e7dbf5e083f09&auto=format&fit=crop&w=1434&q=80" alt="">
+                        <div class="text">
+                        <h3>PROJECT 5</h4>
+                        <p>Short Description</p>
+                        </div>
+                        <div class="button">Learn More</div>
+                    </div>
+                
+                    <div class="item" id="6">
+                        <img src="https://images.unsplash.com/photo-1493962853295-0fd70327578a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f758b0379f730e73c03b6153aaad7cf1&auto=format&fit=crop&w=1350&q=80" alt="">
+                        <div class="text">
+                        <h3>PROJECT 6</h4>
+                        <p>Short Description</p>
+                        </div>
+                        <div class="button">Learn More</div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+        <section id="contact">
+            <div class="maincontainer">
+                <article class="header">
+                    <h1>Contact Me</h1>
+                    <p>Thank you for visiting my profile! If you have any questions, inquiries, or just want to say hello, I'd love to hear from you. Whether it's regarding a potential collaboration, a project idea, or any other matter, feel free to reach out using the contact form
+                    </p> 
+                    <div class="contact-data">
+                        <div class="contact-info">
+                          <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+02 (0100) 200-7437</span>
+                          </div>
+                          <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span> amr.abdoullah@gmail.com</span>
+                          </div>
+                        </div>
+                        <div class="social-media-icons">
+                          <a href="#" class="social-icon">
+                            <i class="fab fa-github"></i>
+                          </a>
+                          <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                          </a>
+                          <div class="download-cv">
+                            <button> Download CV</button>
+                          </div>
+                        </div>
+                    </div>   
+                </article>            
+                <form class="flex-container" method="post" action="#">
+                    <div class="name-email">
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" maxlength="50" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" maxlength="50" required>
+                        </div>
+                    </div>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="10" maxlength="1000" required></textarea>
+                    <input type="submit" value="Send" class="cta" >
+                </form>
+            </div>
+        </section>
 
+       
+    </main>
+       <!-- End main content -->
+    <footer>
+        © Copyright 2023 Amr Salah. All rights reserved.
     </footer>
+
 </body>
 </html>
